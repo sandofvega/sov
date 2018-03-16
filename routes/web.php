@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', 'HomeController@index');
+Route::get('/download-cv', 'HomeController@downloadCV');
+Route::post('/contact', 'ContactController@sendMail');
