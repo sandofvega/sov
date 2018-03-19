@@ -14,7 +14,7 @@
 
                 <!--PERSONAL LOGO-->
                 <div class="logo-flat">
-                    <img alt="personal-logo" class="img-responsive" src="{{ public_folder('assets/img/sand.jpg') }}">
+                    <img alt="personal-logo" class="img-responsive" src="{{ url('public/assets/img/sand.jpg') }}">
                 </div>
                 <br>
 
@@ -129,7 +129,7 @@
                         <div id="about-btn" class="card-action">
                             <div class="about-btn">
                                 <!-- DOWNLOAD CV BUTTON -->
-                                <a href="{{ public_folder('storage/home/YasinCV.pdf') }}" class="btn waves-effect" download>Download CV</a>
+                                <a href="{{ url('/download-cv') }}" class="btn waves-effect" download>Download CV</a>
                                 <!-- CONTACT BUTTON -->
                                 <a href="#contact" class="btn waves-effect">Contact Me</a>
                             </div>
@@ -419,13 +419,13 @@
                                 {{ csrf_field() }}
                                 <!-- NAME -->
                                 <div class="input-field">
-                                    <input id="first_name" type="text" class="validate" name="first_name" required>
-                                    <label for="first_name">Name</label>
+                                    <input id="name" type="text" class="validate" name="name" required>
+                                    <label for="name">Name</label>
                                 </div>
                                 <!--SUBJECT-->
                                 <div class="input-field">
-                                    <input id="sub" type="text" class="validate" name="sub">
-                                    <label for="sub">Subject</label>
+                                    <input id="subject" type="text" class="validate" name="subject" required>
+                                    <label for="subject">Subject</label>
                                 </div>
                                 <!--EMAIL-->
                                 <div class="input-field">
@@ -434,9 +434,9 @@
                                 </div>
                                 <!--MESSAGE-->
                                 <div class="input-field">
-                                <textarea id="textarea1" class="materialize-textarea" name="message"
+                                <textarea id="message" class="materialize-textarea" name="message"
                                           required></textarea>
-                                    <label for="textarea1">Message</label>
+                                    <label for="message">Message</label>
                                 </div>
                                 <!-- SEND BUTTON -->
                                 <div class="contact-send">

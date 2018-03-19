@@ -199,21 +199,35 @@
         /***MAIL SCRIPT***/
         $('form#contact-form').on('submit', function (e) {
             e.preventDefault(); //Prevents default submit
-            var form = $(this);
+
+
+            var token = $("input[name=_token]").val();
+            var name = $("input[name=name]").val();
+            var subject = $("input[name=subject]").val();
+            var email = $("input[name=email]").val();
+            var message = $("textarea[name=message]").val();
+            // var message = $("textarea[name=message]").val().replace(/(\r\n|\n|\r)/gm,"<br>"); // line break to <br>
+
             $("#submit").attr('disabled', 'disabled'); //Disable the submit button on click
-            var post_data = form.serialize(); //Serialized the form data
             $('div#form-loader').removeClass('is-hidden').fadeIn(500);
+
             $.ajax({
                 type: 'POST',
                 url: 'contact', // Form script
-                data: post_data
+                data: {
+                    '_token' : token,
+                    'name' : name,
+                    'subject' : subject,
+                    'email' : email,
+                    'message' : message
+                }
             })
                 .done(function () {
                     $('div#form-loader').fadeOut(500);
                     Materialize.toast('Message Sent! I will contact you shortly, Thanks', 4000);
                     $("form#contact-form")[0].reset();
                     Materialize.updateTextFields(); // Rest floating labels
-                    $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
+                    // $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
 
                 })
                 .fail(function () {

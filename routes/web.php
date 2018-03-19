@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('/download-cv', 'HomeController@downloadCV');
-Route::post('/contact', 'ContactController@sendMail');
+Route::post('/contact', 'ContactController@store');
