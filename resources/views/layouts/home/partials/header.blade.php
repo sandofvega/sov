@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Sand Of Vega; yasin@sandofvega.com">
-    <meta name="description" content="">
+    <meta name="description" content="@yield('meta-description')">
     <meta name="keywords" content="@yield('meta-keywords')">
 
 
@@ -22,18 +22,10 @@
     <!-- FONT AWESOME -->
     <link href="{{ public_folder('assets/css/font-awesome.min.css') }}" rel="stylesheet">
 
-
-    <!-- ANIMATION -->
-    <link href="{{ public_folder('assets/css/animate.min.css') }}" rel="stylesheet">
-
-
     <!-- MATERIALIZE -->
-    <link href="{{ public_folder('assets/css/materialize.css') }}" rel="stylesheet">
-    <!-- BOOTSTRAP -->
-    <link href="{{ public_folder('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ public_folder('assets/css/materialize.min.css') }}" rel="stylesheet">
 
-
-    <!-- CUSTOM STYLE -->
-    <link href="{{ public_folder('assets/css/style.css') }}" id="switch_style" rel="stylesheet">
+    <!-- STYLE SHEET -->
+    <link href="{{ public_folder('assets/css/style.min.css') }}" id="switch_style" rel="stylesheet">
 
 </head>
