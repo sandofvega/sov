@@ -2,6 +2,8 @@
 
 @section('title', 'Web Developer')
 
+@section('meta-keywords', 'web developer')
+
 @section('content')
     <!--==========================================
                 HEADER
@@ -79,19 +81,23 @@
                                     <!--LINKS-->
                                     <div class="links">
                                         <!-- FACEBOOK-->
-                                        <a href="https://www.facebook.com/sandofvega" target="_blank" id="first_one" class="social btn-floating indigo">
+                                        <a href="https://www.facebook.com/sandofvega" target="_blank" id="first_one"
+                                           class="social btn-floating indigo">
                                             <i class="fa fa-facebook"></i>
                                         </a>
                                         <!-- TWITTER-->
-                                        <a href="https://twitter.com/sandofvega" target="_blank" class="social  btn-floating blue">
+                                        <a href="https://twitter.com/sandofvega" target="_blank"
+                                           class="social  btn-floating blue">
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                         <!-- GOOGLE+-->
-                                        <a href="https://plus.google.com/+SandOfVega" target="_blank" class="social  btn-floating red">
+                                        <a href="https://plus.google.com/+SandOfVega" target="_blank"
+                                           class="social  btn-floating red">
                                             <i class="fa fa-google-plus"></i>
                                         </a>
                                         <!-- LINKEDIN-->
-                                        <a href="https://www.linkedin.com/in/sandofvega/" target="_blank" class="social  btn-floating blue darken-3">
+                                        <a href="https://www.linkedin.com/in/sandofvega/" target="_blank"
+                                           class="social  btn-floating blue darken-3">
                                             <i class="fa fa-linkedin"></i>
                                         </a>
                                     </div>
@@ -411,13 +417,13 @@
                 <h4 class="text-uppercase text-center"><i class="title-icon fa fa-envelope"></i>Contact</h4>
             </div>
             <div class="row">
-                <div id="contact-card" class="col-md-5 col-sm-12 col-xs-12">
+                <div id="contact-card" class="col-md-12 col-sm-12 col-xs-12">
                     <!-- CONTACT FORM -->
                     <div class="card">
                         <div class="card-content">
                             <form id="contact-form" name="c-form">
-                                {{ csrf_field() }}
-                                <!-- NAME -->
+                            {{ csrf_field() }}
+                            <!-- NAME -->
                                 <div class="input-field">
                                     <input id="name" type="text" class="validate" name="name" required>
                                     <label for="name">Name</label>
@@ -452,15 +458,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <!-- CONTACT MAP -->
-                    <div id="map-card" class="card">
-                        <!-- MAP -->
-                        <div id="myMap"></div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>

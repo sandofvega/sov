@@ -152,50 +152,6 @@
         clint();
 
 
-        /***GOOGLE MAP***/
-        function init() {
-            var mapOptions = {
-                zoom: 14,
-                center: new google.maps.LatLng(23.6964847, 90.4799437),
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false,
-                scaleControl: true,
-                disableDefaultUI: false
-            };
-
-            var myMap = new google.maps.Map(document.getElementById('myMap'), mapOptions);
-            var shanarpar = new google.maps.LatLng(23.7032113, 90.4894833);
-
-            new MarkerWithLabel({
-                position: shanarpar,
-                icon: {
-                    path: google.maps.SymbolPath.CIRCLE,
-                    scale: 0
-                },
-                map: myMap,
-                labelAnchor: new google.maps.Point(10, 10),
-                labelClass: "map-label", // The CSS class for the label
-                draggable: false
-            });
-        }
-        /***GOOGLE MAP INITIALIZATION***/
-        init();
-
-
-        /***CAROUSAL SWIPE***/
-        $(".carousel-inner").swipe({
-            //Generic swipe handler for all directions
-            swipeLeft: function () {
-                $(this).parent().carousel('next');
-            },
-            swipeRight: function () {
-                $(this).parent().carousel('prev');
-            },
-            //Default is 75px, set to 0 for demo so any distance triggers swipe
-            threshold: 0
-        });
-
-
         /***MAIL SCRIPT***/
         $('form#contact-form').on('submit', function (e) {
             e.preventDefault(); //Prevents default submit

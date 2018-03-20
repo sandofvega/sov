@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Sand Of Vega; yasin@sandofvega.com">
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="@yield('meta-keywords')">
 
 
     <title>@yield('title') | {{ config('app.name') }}</title>
