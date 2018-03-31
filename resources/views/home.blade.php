@@ -16,25 +16,23 @@
 
                 <!--PERSONAL LOGO-->
                 <div class="logo-flat">
-                    <img alt="personal-logo" class="img-responsive" src="{{ url('public/assets/img/sand.jpg') }}">
+                    <img alt="personal-logo" class="img-responsive" src="{{ url('public/img/sand.jpg') }}">
                 </div>
                 <br>
 
                 <!--OPTIONS-->
-                <a href="#home"><i class="title-icon fa fa-user"></i>Home</a>
-                <a href="#about"><i class="title-icon fa fa-dashboard"></i>About</a>
-                <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
-                <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
-                <a href="#interest"><i class="title-icon fa fa-heart"></i>Interest</a>
-                <a href="#contact"><i class="title-icon fa fa-envelope"></i>Contact</a>
+                <a href="#home"><i class="title-icon icon-user"></i>Home</a>
+                <a href="#about"><i class="title-icon icon-dashboard"></i>About</a>
+                <a href="#skills"><i class="title-icon icon-sliders"></i>Skills</a>
+                <a href="#experience"><i class="title-icon icon-suitcase"></i>Experience</a>
+                <a href="#interest"><i class="title-icon icon-heart"></i>Interest</a>
+                <a href="#contact"><i class="title-icon icon-envelope"></i>Contact</a>
             </div>
 
             <!-- MENU BUTTON -->
             <div id="menuToggle">
                 <div class="toggle-normal">
-                    <i class="material-icons top-bar">remove</i>
-                    <i class="material-icons middle-bar">remove</i>
-                    <i class="material-icons bottom-bar">remove</i>
+                    <i class="icon-menu"></i>
                 </div>
             </div>
         </nav>
@@ -51,7 +49,7 @@
                                 <!-- PROFILE PICTURE -->
                                 <div id="profile" class="right">
                                     <img alt="profile-image" class="img-responsive"
-                                         src="{{ public_folder('assets/img/profile.jpg') }}">
+                                         src="{{ url('public/img/profile.jpg') }}">
                                     <div class="slant"></div>
                                 </div>
 
@@ -67,14 +65,17 @@
                                     <div class="infos">
                                         <ul class="profile-list">
                                             <li class="clearfix">
-                                                <span class="title"><i class="material-icons">email</i></span>
+                                                <span class="title"><i class="icon-email"></i></span>
                                                 <span class="content">yasin@sandofvega.com</span>
                                             </li>
                                             <li class="clearfix">
-                                                <span class="title"><i class="material-icons">place</i></span>
-                                                <span class="content">Shanarpar, Sharuliya, Demra, Dhaka - 1361</span>
+                                                <span class="title"><i class="icon-skype"></i></span>
+                                                <span class="content">sandofvega</span>
                                             </li>
-
+                                            <li class="clearfix">
+                                                <span class="title"><i class="icon-place"></i></span>
+                                                <span class="content">Dhaka, Bangladesh</span>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -83,22 +84,32 @@
                                         <!-- FACEBOOK-->
                                         <a href="https://www.facebook.com/sandofvega" target="_blank" id="first_one"
                                            class="social btn-floating indigo">
-                                            <i class="fa fa-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <!-- GITHUB-->
+                                        <a href="https://github.com/sandofvega" target="_blank"
+                                           class="social btn-floating black">
+                                            <i class="icon-github"></i>
                                         </a>
                                         <!-- TWITTER-->
                                         <a href="https://twitter.com/sandofvega" target="_blank"
-                                           class="social  btn-floating blue">
-                                            <i class="fa fa-twitter"></i>
+                                           class="social btn-floating blue">
+                                            <i class="icon-twitter"></i>
                                         </a>
-                                        <!-- GOOGLE+-->
+                                        <!-- Google Plus-->
                                         <a href="https://plus.google.com/+SandOfVega" target="_blank"
-                                           class="social  btn-floating red">
-                                            <i class="fa fa-google-plus"></i>
+                                           class="social btn-floating blue darken-3">
+                                            <i class="icon-google-plus red"></i>
                                         </a>
                                         <!-- LINKEDIN-->
                                         <a href="https://www.linkedin.com/in/sandofvega/" target="_blank"
-                                           class="social  btn-floating blue darken-3">
-                                            <i class="fa fa-linkedin"></i>
+                                           class="social btn-floating blue darken-3">
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                        <!-- Pintarest-->
+                                        <a href="https://www.pinterest.com/sandofvega/" target="_blank"
+                                           class="social btn-floating red">
+                                            <i class="icon-pinterest"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -123,10 +134,10 @@
                         <div class="card-content">
                             <!-- ABOUT PARAGRAPH -->
                             <p>
-                                Hello! I’m Yasin. Senior Web Developer with over 13 years of experience
-                                specializing in front end development. Experienced with all stages of the
-                                development cycle for dynamic web projects.Having an in-depth knowledge
-                                including advanced HTML5, CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript,
+                                Hello! I’m Yasin. Web Developer with over 1 year of experience
+                                specializing in back end development. Experienced with all stages of the
+                                development cycle for dynamic web projects. Having knowledge
+                                including HTML5, CSS, CSS3, SASS, LESS, JSON, XML, JavaScript,
                                 JQuery, Angular JS. Strong background in management and leadership.
                             </p>
                         </div>
@@ -135,7 +146,7 @@
                         <div id="about-btn" class="card-action">
                             <div class="about-btn">
                                 <!-- DOWNLOAD CV BUTTON -->
-                                <a href="{{ url('/download-cv') }}" class="btn waves-effect" download>Download CV</a>
+                                <a href="{{ url('public/storage/home/YasinCV.pdf') }}" target="_blank" class="btn waves-effect">Download CV</a>
                                 <!-- CONTACT BUTTON -->
                                 <a href="#contact" class="btn waves-effect">Contact Me</a>
                             </div>
@@ -271,7 +282,7 @@
         <div class="container">
             <!-- SECTION TITLE -->
             <div class="section-title">
-                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-suitcase"></i>Experience</h4>
+                <h4 class="text-uppercase text-center"><i class="title-icon icon-suitcase"></i>Experience</h4>
             </div>
 
             <div id="timeline-experience">
@@ -283,14 +294,14 @@
                     <div class="card timeline-content">
                         <div class="card-content">
                             <!-- TIMELINE TITLE -->
-                            <h6 class="timeline-title">Designer</h6>
+                            <h6 class="timeline-title">Laravel Developer</h6>
                             <!-- TIMELINE TITLE INFO -->
                             <div class="timeline-info">
                                 <h6>
-                                    <small>RulerSoft</small>
+                                    <small>Sahara Soft</small>
                                 </h6>
                                 <h6>
-                                    <small>Jan 2010 - Mar 2012</small>
+                                    <small>Jan 2018 - Present</small>
                                 </h6>
                             </div>
                             <!-- TIMELINE PARAGRAPH -->
@@ -310,14 +321,14 @@
                     <div class="card timeline-content">
                         <div class="card-content">
                             <!-- TIMELINE TITLE -->
-                            <h6 class="timeline-title">Frontend Developer</h6>
+                            <h6 class="timeline-title">Web Researcher</h6>
                             <!-- TIMELINE TITLE INFO -->
                             <div class="timeline-info">
                                 <h6>
-                                    <small>Micro IT</small>
+                                    <small>GIT Desk</small>
                                 </h6>
                                 <h6>
-                                    <small>Jan 2012 - Mar 2014</small>
+                                    <small>Jan 2016 - June 2016</small>
                                 </h6>
                             </div>
                             <!-- TIMELINE PARAGRAPH -->
@@ -341,7 +352,7 @@
         <div class="container">
             <!-- SECTION TITLE -->
             <div class="section-title">
-                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-heart"></i>Interest</h4>
+                <h4 class="text-uppercase text-center"><i class="title-icon icon-heart"></i>Interest</h4>
             </div>
 
             <div id="interest-card" class="card">
@@ -361,42 +372,42 @@
                     <!--INTEREST ICON ONE-->
                     <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
                         <div class="interest-icon">
-                            <i class="fa fa-music"></i>
+                            <i class="icon-music"></i>
                             <span>Music</span>
                         </div>
                     </div>
                     <!--INTEREST ICON TWO-->
                     <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                         <div class="interest-icon-even">
-                            <i class="fa fa-gamepad"></i>
+                            <i class="icon-gamepad"></i>
                             <span>Gaming</span>
                         </div>
                     </div>
                     <!--INTEREST ICON THREE-->
                     <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                         <div class="interest-icon">
-                            <i class="fa fa-camera"></i>
+                            <i class="icon-camera"></i>
                             <span>Photography</span>
                         </div>
                     </div>
                     <!--INTEREST ICON FOUR-->
                     <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                         <div class="interest-icon-even">
-                            <i class="fa fa-futbol-o"></i>
+                            <i class="icon-football"></i>
                             <span>Football</span>
                         </div>
                     </div>
                     <!--INTEREST ICON FIVE-->
                     <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                         <div class="interest-icon">
-                            <i class="fa fa-plane"></i>
+                            <i class="icon-plane"></i>
                             <span>Traveling</span>
                         </div>
                     </div>
                     <!--INTEREST ICON SIX-->
                     <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
                         <div class="interest-icon-even">
-                            <i class="fa fa-film"></i>
+                            <i class="icon-film"></i>
                             <span>Movies</span>
                         </div>
                     </div>
@@ -414,7 +425,7 @@
         <div class="container">
             <!-- SECTION TITLE -->
             <div class="section-title">
-                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-envelope"></i>Contact</h4>
+                <h4 class="text-uppercase text-center"><i class="title-icon icon-envelope"></i>Contact</h4>
             </div>
             <div class="row">
                 <div id="contact-card" class="col-md-12 col-sm-12 col-xs-12">

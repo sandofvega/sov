@@ -1,10 +1,10 @@
 <!--SCROLL TO TOP-->
 <div id="scroll-top">
-    <div id="scrollup"><i class="fa fa-angle-up"></i></div>
+    <div id="scrollup"><i class="icon-angle-up"></i></div>
 </div>
 
 <!-- ================== SCRIPTS ================== -->
-<script src="{{ public_folder('assets/js/script.js') }}"></script>
+<script src="{{ url('public/js/script.js') }}"></script>
 
 
 </body>
