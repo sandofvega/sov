@@ -51,7 +51,7 @@
                                 <!-- NAME & STATUS -->
                                 <div class="info-headings">
                                     <h4 class="text-uppercase left">Yasin Arafat</h4>
-                                    <h6 class="text-capitalize left">Web Developer</h6>
+                                    <h6 class="text-capitalize left">Full-Stack Web Developer</h6>
                                 </div>
 
                                 <!-- CONTACT INFO -->
