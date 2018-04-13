@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Sand Of Vega; yasin@sandofvega.com">
-    <link rel="shortcut icon" href="{{ public_folder('favicon.png') }}">
+    <link rel="shortcut icon" href="{{ url('public/favicon.png') }}">
 
-    <title>404 Not Found | {{ config('app.name') }}</title>
+    <title>Not Found | {{ config('app.name') }}</title>
 
     <!-- Latest compiled and Bootstrap minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Core CSS -->
-    <link href="{{ public_folder('assets/css/owl.css') }}" rel="stylesheet">
+    <link href="{{ url('public/css/owl.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
