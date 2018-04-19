@@ -11,7 +11,7 @@ class ContactToMe extends Mailable
     use Queueable, SerializesModels;
 
     /**
-     * User data come from contact form.
+     * Sender data come from contact form.
      *
      * @var
      */

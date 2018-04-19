@@ -10,14 +10,9 @@
 
         <div id="interest-card" class="card">
             <!--INTEREST TEXT-->
-            <div class="card-content">
-                <p>
-                    First of all I love music, country music is my favorite. Love watching
-                    football, movies and playing games with my buddies. I spend quite a lot of time
-                    in traveling and photography, these keeps me fresh for working environment.
-                    I also spend time volunteering at the Red Cross in London, UK each month.
-                </p>
-            </div>
+            {{--<div class="card-content">
+                <p></p>
+            </div>--}}
 
             <!--INTEREST ICONS-->
             <div class="row no-gutters">

@@ -7,16 +7,10 @@
             <div class="col-md-12">
                 <!-- DETAILS -->
                 <div id="about-card" class="card">
-                    <div class="card-content">
+                    {{--<div class="card-content">
                         <!-- ABOUT PARAGRAPH -->
-                        <p>
-                            Hello! I’m Yasin. Web Developer with over 1 year of experience
-                            specializing in back end development. Experienced with all stages of the
-                            development cycle for dynamic web projects. Having knowledge
-                            including HTML5, CSS, CSS3, SASS, LESS, JSON, XML, JavaScript,
-                            JQuery, Angular JS. Strong background in management and leadership.
-                        </p>
-                    </div>
+                        <p></p>
+                    </div>--}}
 
                     <!-- BUTTONS -->
                     <div id="about-btn" class="card-action">

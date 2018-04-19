@@ -12,7 +12,7 @@
             <!-- FIRST TIMELINE -->
             <div class="timeline-block">
                 <!-- DOT -->
-                <div class="timeline-dot"><h6>D</h6></div>
+                <div class="timeline-dot"><h6>L</h6></div>
                 <!-- TIMELINE CONTENT -->
                 <div class="card timeline-content">
                     <div class="card-content">
@@ -28,10 +28,7 @@
                             </h6>
                         </div>
                         <!-- TIMELINE PARAGRAPH -->
-                        <p>
-                            I started my designing carrier here, spent tow years learning and working
-                            in various designing aspects..
-                        </p>
+                        {{--<p></p>--}}
                     </div>
                 </div>
             </div>
@@ -39,7 +36,7 @@
             <!-- SECOND TIMELINE -->
             <div class="timeline-block">
                 <!-- DOT -->
-                <div class="timeline-dot"><h6>F</h6></div>
+                <div class="timeline-dot"><h6>W</h6></div>
                 <!-- TIMELINE CONTENT -->
                 <div class="card timeline-content">
                     <div class="card-content">
@@ -55,14 +52,11 @@
                             </h6>
                         </div>
                         <!-- TIMELINE PARAGRAPH -->
-                        <p>
-                            I started my frontend carrier here, spent tow years learning and working
-                            in various frontend aspects. I worked on about 40+ projects local and online.
-                        </p>
-
+                        {{--<p></p>--}}
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
