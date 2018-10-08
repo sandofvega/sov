@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Sand Of Vega; yasin@sandofvega.com">
-    <link rel="shortcut icon" href="{{ url('public/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
 
     <title>Not Found | {{ config('app.name') }}</title>
 
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Core CSS -->
-    <link href="{{ url('public/css/owl.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
@@ -75,7 +75,7 @@
         <h2>You're lost in the dark!</h2>
         <p>The page you're looking for does not exist</p><br>
         <div class="btndiv">
-            <a href="{{ url('/') }}">
+            <a href="{{ route('home') }}">
                 <button class="btnpop">Go to Home</button>
             </a>
         </div>

@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
-gulp.task('watch', ['serve', 'sass', 'js'], function () {
+gulp.task('watch', ['sass', 'js'], function () {
     gulp.watch('resources/views/**/*.blade.php', browserSync.reload);
     gulp.watch('resources/assets/sass/*.scss', ['sass']);
     gulp.watch('resources/assets/js/*.js', ['js']);
@@ -24,7 +24,7 @@ gulp.task('sass', function () {
         }))
 });
 
-gulp.task('css', function () {
+gulp.task('css', ['sass'], function () {
     return gulp.src('resources/assets/css/*.css')
         .pipe(sourcemaps.init())
         .pipe(cssnano())
@@ -54,4 +54,5 @@ gulp.task('serve', function () {
     })
 });
 
+gulp.task('build', ['css', 'js', 'font']);
 gulp.task('default', ['watch']);

@@ -21,7 +21,7 @@
                         <!-- TIMELINE TITLE INFO -->
                         <div class="timeline-info">
                             <h6>
-                                <small>Sahara Soft</small>
+                                <small>Sahara Software & Technology</small>
                             </h6>
                             <h6>
                                 <small>Jan 2018 - Present</small>

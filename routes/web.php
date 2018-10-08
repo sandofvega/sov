@@ -1,18 +1,19 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'HomeController@index');
-Route::get('/download-cv', 'HomeController@downloadCV');
-Route::post('/contact', 'ContactController@store');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('download-cv', 'HomeController@downloadCV')->name('download.cv');
+Route::post('contact', 'ContactController@store')->name('contact');
+
+
+
+// Debugbar Routes
+Route::get('/_debugbar/assets/stylesheets', [
+    'as' => 'debugbar-css',
+    'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@css'
+]);
+Route::get('/_debugbar/assets/javascript', [
+    'as' => 'debugbar-js',
+    'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
+]);

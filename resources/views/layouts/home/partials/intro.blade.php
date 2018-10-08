@@ -2,33 +2,34 @@
                 HEADER
     ===========================================-->
 <header id="home">
-    <nav id="theMenu" class="menu">
 
-        <!--MENU-->
-        <div id="menu-options" class="menu-wrap">
+    <!--MENU-->
+    {{--<nav id="theMenu" class="menu">--}}
+        {{----}}
+        {{--<div id="menu-options" class="menu-wrap">--}}
 
-            <!--PERSONAL LOGO-->
-            <div class="logo-flat">
-                <img alt="personal-logo" class="img-responsive" src="{{ url('public/img/sand.jpg') }}">
-            </div>
-            <br>
+            {{--<!--PERSONAL LOGO-->--}}
+            {{--<div class="logo-flat">--}}
+                {{--<img alt="personal-logo" class="img-responsive" src="{{ asset('img/sand.jpg') }}">--}}
+            {{--</div>--}}
+            {{--<br>--}}
 
-            <!--OPTIONS-->
-            <a href="#home"><i class="title-icon icon-user"></i>Home</a>
-            <a href="#about"><i class="title-icon icon-dashboard"></i>About</a>
-            <a href="#skills"><i class="title-icon icon-sliders"></i>Skills</a>
-            <a href="#experience"><i class="title-icon icon-suitcase"></i>Experience</a>
-            <a href="#interest"><i class="title-icon icon-heart"></i>Interest</a>
-            <a href="#contact"><i class="title-icon icon-envelope"></i>Contact</a>
-        </div>
+            {{--<!--OPTIONS-->--}}
+            {{--<a href="#home"><i class="title-icon icon-user"></i>Home</a>--}}
+            {{--<a href="#about"><i class="title-icon icon-dashboard"></i>About</a>--}}
+            {{--<a href="#skills"><i class="title-icon icon-sliders"></i>Skills</a>--}}
+            {{--<a href="#experience"><i class="title-icon icon-suitcase"></i>Experience</a>--}}
+            {{--<a href="#interest"><i class="title-icon icon-heart"></i>Interest</a>--}}
+            {{--<a href="#contact"><i class="title-icon icon-envelope"></i>Contact</a>--}}
+        {{--</div>--}}
 
-        <!-- MENU BUTTON -->
-        <div id="menuToggle">
-            <div class="toggle-normal">
-                <i class="icon-menu"></i>
-            </div>
-        </div>
-    </nav>
+        {{--<!-- MENU BUTTON -->--}}
+        {{--<div id="menuToggle">--}}
+            {{--<div class="toggle-normal">--}}
+                {{--<i class="icon-menu"></i>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</nav>--}}
 
     <div class="header-background section">
         <div id="v-card-holder">
@@ -42,7 +43,7 @@
                             <!-- PROFILE PICTURE -->
                             <div id="profile" class="right">
                                 <img alt="profile-image" class="img-responsive"
-                                     src="{{ url('public/img/profile.jpg') }}">
+                                     src="{{ asset('img/profile.jpg') }}">
                                 <div class="slant"></div>
                             </div>
 

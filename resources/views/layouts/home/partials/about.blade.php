@@ -16,7 +16,7 @@
                     <div id="about-btn" class="card-action">
                         <div class="about-btn">
                             <!-- DOWNLOAD CV BUTTON -->
-                            <a href="{{ url('public/storage/home/YasinCV.pdf') }}" target="_blank" class="btn waves-effect">Download CV</a>
+                            <a href="{{ asset('storage/home/YasinCV.pdf') }}" target="_blank" class="btn waves-effect">Download CV</a>
                             <!-- CONTACT BUTTON -->
                             <a href="#contact" class="btn waves-effect">Contact Me</a>
                         </div>

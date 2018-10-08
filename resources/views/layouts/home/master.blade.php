@@ -1,8 +1,8 @@
-@include('layouts.home.partials.header')
+@include('layouts.home.partials.head')
 
 <body>
 
-@include('layouts.home.partials.pre-loader')
+{{--@include('layouts.home.partials.pre-loader')--}}
 
 @yield('content')
 

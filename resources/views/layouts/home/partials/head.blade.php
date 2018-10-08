@@ -10,7 +10,7 @@
 
 
     <title>@yield('title') | {{ config('app.name') }}</title>
-    <link rel="icon" href="{{ url('public/favicon.png') }}">
+    <link rel="icon" href="{{ asset('favicon.png') }}">
 
 
     <!-- GOOGLE FONT -->
@@ -18,9 +18,9 @@
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
     <!-- MATERIALIZE -->
-    <link href="{{ url('public/css/materialize.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/materialize.css') }}" rel="stylesheet">
 
     <!-- STYLE SHEET -->
-    <link href="{{ url('public/css/style.css') }}" id="switch_style" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" id="switch_style" rel="stylesheet">
 
 </head>
