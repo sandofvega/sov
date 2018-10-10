@@ -60,6 +60,6 @@
 
     php artisan up
 
-    echo -e "\e[92mYour website Deployed Successfully."
+    echo -e "\e[92mYour Website Deployed Successfully."
 
 @endtask
