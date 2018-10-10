@@ -38,7 +38,7 @@
 
     cd public
 
-    mv css fonts img js ../../public_html/
+    mv css fonts images js ../../public_html/
 
     cd ..
 

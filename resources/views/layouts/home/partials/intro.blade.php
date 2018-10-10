@@ -10,7 +10,7 @@
 
             {{--<!--PERSONAL LOGO-->--}}
             {{--<div class="logo-flat">--}}
-                {{--<img alt="personal-logo" class="img-responsive" src="{{ asset('img/sand.jpg') }}">--}}
+                {{--<img alt="personal-logo" class="img-responsive" src="{{ asset('images/sand.jpg') }}">--}}
             {{--</div>--}}
             {{--<br>--}}
 
@@ -43,7 +43,7 @@
                             <!-- PROFILE PICTURE -->
                             <div id="profile" class="right">
                                 <img alt="profile-image" class="img-responsive"
-                                     src="{{ asset('img/profile.jpg') }}">
+                                     src="{{ asset('images/me.jpg') }}">
                                 <div class="slant"></div>
                             </div>
 
