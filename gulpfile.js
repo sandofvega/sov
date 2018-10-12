@@ -1,21 +1,21 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cssnano = require('gulp-cssnano');
+var scss = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var cssnano = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
-gulp.task('watch', ['sass', 'js', 'serve'], function () {
-    gulp.watch('resources/views/**/*.blade.php', browserSync.reload);
-    gulp.watch('resources/assets/sass/*.scss', ['sass']);
+gulp.task('watch', ['scss', 'js', 'font'], function () {
+    // gulp.watch('resources/views/**/*', browserSync.reload);
+    gulp.watch('resources/assets/scss/*.scss', ['scss']);
     gulp.watch('resources/assets/js/*.js', ['js']);
 });
 
-gulp.task('sass', function () {
-    return gulp.src('resources/assets/sass/*.scss')
+gulp.task('scss', function () {
+    return gulp.src('resources/assets/scss/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(scss().on('error', scss.logError))
         .pipe(cssnano())
         .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('public/css'))
@@ -62,14 +62,14 @@ gulp.task('default', ['watch']);
 
 gulp.task('build', ['build-css', 'build-js', 'font']);
 
-gulp.task('build-sass', function () {
-    return gulp.src('resources/assets/sass/*.scss')
-        .pipe(sass().on('error', sass.logError))
+gulp.task('build-scss', function () {
+    return gulp.src('resources/assets/scss/*.scss')
+        .pipe(scss().on('error', scss.logError))
         .pipe(cssnano())
         .pipe(gulp.dest('public/css'))
 });
 
-gulp.task('build-css', ['build-sass'], function () {
+gulp.task('build-css', ['build-scss'], function () {
     return gulp.src('resources/assets/css/*.css')
         .pipe(cssnano())
         .pipe(gulp.dest('public/css'))

@@ -1,0 +1,61 @@
+//===========================================================================//
+// TESTIMONIALS SECTION
+//===========================================================================//
+@import "variables";
+
+#testimonials {
+  .carousel{
+    cursor: w-resize;
+  }
+  .carousel-indicators{
+    li{
+      border: 2px solid $accent-color;
+    }
+    .active{
+      background-color: $accent-color;
+    }
+  }
+  .item{
+    padding-top: 25px;
+  }
+  .ben {
+    /*image class*/
+    margin-bottom: -50px;
+    margin-top: -5px;
+    position: inherit;
+    z-index: 2;
+    img {
+      /*clint image*/
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+    }
+  }
+
+
+  blockquote {
+    /*quote*/
+    padding-top: 66px;
+    text-align: center;
+    padding-bottom: 39px;
+    font-size: 15px;
+    border-left: none;
+    &::before {
+      /*quote sign*/
+      content: "\201C";
+      font-family: Georgia, serif;
+      font-weight: bold;
+      color: $accent-color;
+      font-size: 2em;
+      line-height: .1em;
+      margin-right: 0;
+      vertical-align: -0.3em;
+    }
+  }
+
+  blockquote cite {
+    display: block;
+    margin: 15px 0 0 0;
+    font-style: normal;
+  }
+}

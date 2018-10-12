@@ -56,7 +56,28 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <div id="brands">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="brands-wrap">
+                            <!--BRAND LOGO'S-->
+                            <ul id="brands-list" class="clearfix">
+                                @foreach($brands as $brand)
+                                <li>
+                                    <a href="{{ $brand->url }}" title="{{ ucfirst($brand->name) }}" target="_blank">
+                                        <img src="{{ asset($brand->logo) }}" alt="{{ $brand->name }}">
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>

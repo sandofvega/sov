@@ -121,16 +121,16 @@
         });
 
 
-        /***CLIENT SLIDER***/
-        function clint() {
-            var $clientcarousel = $('ul#clients-list');
-            var clients = $clientcarousel.children().length;
-            var clientwidth = (clients * 140); // 140px width for each client item
-            $clientcarousel.css('width', clientwidth);
+        /***BRAND SLIDER***/
+        function brand() {
+            var $brandcarousel = $('ul#brands-list');
+            var brands = $brandcarousel.children().length;
+            var brandwidth = (brands * 140); // 140px width for each brand item
+            $brandcarousel.css('width', brandwidth);
 
             var rotating = true;
-            var clientspeed = 1800;
-            setInterval(rotateClients, clientspeed);
+            var brandspeed = 1800;
+            setInterval(rotateBrands, brandspeed);
 
             $(document).on({
                 mouseenter: function () {
@@ -140,20 +140,20 @@
                 mouseleave: function () {
                     rotating = true;
                 }
-            }, '#clients');
+            }, '#brands');
 
-            function rotateClients() {
+            function rotateBrands() {
                 if (rotating !== false) {
-                    var $first = $('ul#clients-list').find('li:first');
+                    var $first = $('ul#brands-list').find('li:first');
                     $first.animate({'margin-left': '-140px'}, 2000, function () {
                         $first.remove().css({'margin-left': '0px'});
-                        $('ul#clients-list').find('li:last').after($first);
+                        $('ul#brands-list').find('li:last').after($first);
                     });
                 }
             }
         }
-        /***CLIENT SLIDER INITIALIZATION***/
-        clint();
+        /***BRAND SLIDER INITIALIZATION***/
+        brand();
 
 
         /***MAIL SCRIPT***/
@@ -208,7 +208,7 @@
         window.sr = ScrollReveal({reset: false}); // reset false stops repetition of animation
         var commonCards = '#port-add-icon,#map-card,.interest-icon-even,.interest-icon,' +
             '.timeline-dot, .timeline-content,#add-more,#skills-card,#testimonials-card,' +
-            '#portfolios-card,#interest-card,#p-one,#p-two,#p-three,#blog-card,#contact-card,#clients';
+            '#portfolios-card,#interest-card,#p-one,#p-two,#p-three,#blog-card,#contact-card,#brands';
         // Customizing a reveal set
         sr.reveal(commonCards, {duration: 1100});
         sr.reveal('#about-card,.map-label', {duration: 1400, delay: 500});

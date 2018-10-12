@@ -26,89 +26,91 @@
 // SASS COMPONENTS
 //===========================================================================//
 
-/*
-TABLE OF CONTENT
-*/
-//@import "toc";
 
 /*
-1. HTML, BODY, SECTION, CONTAINER, CARD
+ HTML, BODY, SECTION, CONTAINER, CARD
 */
 @import "base";
 
 
 /*
-2. PRE-LOADER
+ PRE-LOADER
 */
-@import "loader";
+//@import "loader";
 
 
 /*
-3. HEADER
+ HEADER
 */
 @import "header";
 
 
 /*
-4. ABOUT
+ ABOUT
 */
 @import "about";
 
 
 /*
-#TIMELINE SECTION BOTH 5.EDUCATION AND 7.EXPERIENCE EXTENDS FROM IT
+ TIMELINE SECTION BOTH 5.EDUCATION AND 7.EXPERIENCE EXTENDS FROM IT
 */
 @import "timeline";
 
 
 /*
-6. SKILLS SECTION
+ SKILLS SECTION
 */
 @import "skills";
 
 
 /*
-8. PORTFOLIOS SECTION
+ PORTFOLIOS SECTION
 */
 //@import "portfolios";
 
 
 /*
-9. INTEREST SECTION
+ INTEREST SECTION
 */
 @import "interest";
 
 
 /*
-10. TESTIMONIALS SECTION
+ TESTIMONIALS SECTION
 */
 //@import "testimonials";
 
 
 /*
-11. PRICING SECTION
+ BRANDS SLIDER SECTION
+*/
+@import "brands";
+
+
+/*
+ PRICING SECTION
 */
 //@import "pricing";
 
 
 /*
-12. BLOG SECTION
+ BLOG SECTION
 */
 //@import "blog";
 
 
 /*
-13. CONTACT SECTION
+ CONTACT SECTION
 */
 @import "contact";
 
 /*
-14. SCROLL TO TOP SECTION
+ SCROLL TO TOP SECTION
 */
 @import "scrolltop";
 
 
 /*
-15. FOOTER SECTION
+ FOOTER SECTION
 */
 @import "footer";

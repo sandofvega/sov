@@ -1,4 +1,4 @@
-  @import "../sass/variables";
+  @import "variables";
   /*
   -------------------------------------------------------------------------------
   #BODY & HTML
@@ -11,8 +11,8 @@
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    //background-color: $body-color;
-    background-image: linear-gradient(rgba(194, 233, 221, 0.1), rgba(104, 119, 132, 0.2));
+    background-color: $body-color;
+    //background-image: linear-gradient(rgba(194, 233, 221, 0.1), rgba(104, 119, 132, 0.2));
     color: $font-color-dark;
     -webkit-font-smoothing: subpixel-antialiased;
     -webkit-text-stroke: 1px transparent;

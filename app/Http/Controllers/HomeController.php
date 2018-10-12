@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brands;
+
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $brands = Brands::select('name', 'logo', 'url')
+            ->get()
+            ->shuffle();
+
+        return view('home', compact('brands'));
     }
 
     public function downloadCV()

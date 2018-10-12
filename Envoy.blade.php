@@ -54,6 +54,10 @@
 
     cd sandofvega.com
 
+    php artisan migrate
+
+    php artisan db:seed --class=BrandsTableSeeder
+
     php artisan config:cache
 
     php artisan route:cache
