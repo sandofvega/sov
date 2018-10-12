@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
-gulp.task('watch', ['sass', 'js'], function () {
+gulp.task('watch', ['sass', 'js', 'serve'], function () {
     gulp.watch('resources/views/**/*.blade.php', browserSync.reload);
     gulp.watch('resources/assets/sass/*.scss', ['sass']);
     gulp.watch('resources/assets/js/*.js', ['js']);
@@ -54,5 +54,29 @@ gulp.task('serve', function () {
     })
 });
 
-gulp.task('build', ['css', 'js', 'font']);
 gulp.task('default', ['watch']);
+
+
+
+/*** Build ***/
+
+gulp.task('build', ['build-css', 'build-js', 'font']);
+
+gulp.task('build-sass', function () {
+    return gulp.src('resources/assets/sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(cssnano())
+        .pipe(gulp.dest('public/css'))
+});
+
+gulp.task('build-css', ['build-sass'], function () {
+    return gulp.src('resources/assets/css/*.css')
+        .pipe(cssnano())
+        .pipe(gulp.dest('public/css'))
+});
+
+gulp.task('build-js', function () {
+    return gulp.src(['resources/assets/js/libraries.js', 'resources/assets/js/custom.js'])
+        .pipe(concat('script.js'))
+        .pipe(gulp.dest('public/js'))
+});
