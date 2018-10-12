@@ -2,7 +2,7 @@
 
 <body>
 
-{{--@include('layouts.home.partials.pre-loader')--}}
+@include('layouts.home.partials.pre-loader')
 
 @yield('content')
 
