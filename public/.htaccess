@@ -5,17 +5,30 @@
 
     RewriteEngine On
 
-    # Handle Authorization Header
+    ## Redirect to SSL
+    # RewriteCond %{SERVER_PORT} 80
+    # RewriteRule ^(.*)$ https://sandofvega.com/$1 [R,L]
+
+    ## Redirect to non-www
+    # RewriteCond %{HTTP_HOST} ^www\.sandofvega\.com [NC]
+    # RewriteRule ^(.*)$ https://sandofvega.com/$1 [L,R=301]
+
+    ## Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    # Redirect Trailing Slashes If Not A Folder...
+    ## Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # Handle Front Controller...
+    ## Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    ## Maintenance Mode (change REMOTE_ADDR to your public IP)
+    # RewriteCond %{REQUEST_URI} !maintenance.html
+    # RewriteCond %{REMOTE_ADDR} !35.142.63.54
+    # RewriteRule ^.*$ maintenance.html
 </IfModule>

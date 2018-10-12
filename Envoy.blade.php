@@ -54,9 +54,9 @@
 
     cd sandofvega.com
 
-    php artisan migrate
+    php artisan migrate --force
 
-    php artisan db:seed --class=BrandsTableSeeder
+    php artisan db:seed --class=BrandsTableSeeder --force
 
     php artisan config:cache
 
