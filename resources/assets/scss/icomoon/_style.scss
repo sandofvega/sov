@@ -1,19 +1,19 @@
 @import "variables";
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?wxnuad');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?wxnuad#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?wxnuad') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?wxnuad') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?wxnuad#icomoon') format('svg');
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8b28ep');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8b28ep#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?8b28ep') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?8b28ep') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?8b28ep##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: '#{$icomoon-font-family}' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -26,128 +26,104 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@function unicode($str) {
-  @return unquote("\"") + $str + unquote("\"");
-}
-
 .icon-email {
   &:before {
-    content: unicode($icon-email); 
+    content: $icon-email; 
   }
 }
 .icon-place {
   &:before {
-    content: unicode($icon-place); 
-  }
-}
-.icon-menu {
-  &:before {
-    content: unicode($icon-menu); 
+    content: $icon-place; 
   }
 }
 .icon-music {
   &:before {
-    content: unicode($icon-music); 
+    content: $icon-music; 
   }
 }
 .icon-heart {
   &:before {
-    content: unicode($icon-heart); 
-  }
-}
-.icon-user {
-  &:before {
-    content: unicode($icon-user); 
+    content: $icon-heart; 
   }
 }
 .icon-film {
   &:before {
-    content: unicode($icon-film); 
+    content: $icon-film; 
   }
 }
 .icon-camera {
   &:before {
-    content: unicode($icon-camera); 
+    content: $icon-camera; 
   }
 }
 .icon-plane {
   &:before {
-    content: unicode($icon-plane); 
+    content: $icon-plane; 
   }
 }
 .icon-twitter {
   &:before {
-    content: unicode($icon-twitter); 
+    content: $icon-twitter; 
   }
 }
 .icon-facebook {
   &:before {
-    content: unicode($icon-facebook); 
+    content: $icon-facebook; 
   }
 }
 .icon-github {
   &:before {
-    content: unicode($icon-github); 
+    content: $icon-github; 
   }
 }
 .icon-google-plus {
   &:before {
-    content: unicode($icon-google-plus); 
+    content: $icon-google-plus; 
   }
 }
 .icon-envelope {
   &:before {
-    content: unicode($icon-envelope); 
+    content: $icon-envelope; 
   }
 }
 .icon-linkedin {
   &:before {
-    content: unicode($icon-linkedin); 
-  }
-}
-.icon-dashboard {
-  &:before {
-    content: unicode($icon-dashboard); 
+    content: $icon-linkedin; 
   }
 }
 .icon-suitcase {
   &:before {
-    content: unicode($icon-suitcase); 
+    content: $icon-suitcase; 
   }
 }
 .icon-angle-up {
   &:before {
-    content: unicode($icon-angle-up); 
+    content: $icon-angle-up; 
   }
 }
 .icon-gamepad {
   &:before {
-    content: unicode($icon-gamepad); 
-  }
-}
-.icon-instagram {
-  &:before {
-    content: unicode($icon-instagram); 
+    content: $icon-gamepad; 
   }
 }
 .icon-skype {
   &:before {
-    content: unicode($icon-skype); 
+    content: $icon-skype; 
   }
 }
-.icon-sliders {
+.icon-skill {
   &:before {
-    content: unicode($icon-sliders); 
+    content: $icon-skill; 
   }
 }
 .icon-football {
   &:before {
-    content: unicode($icon-football); 
+    content: $icon-football; 
   }
 }
-.icon-pinterest {
+.icon-stackoverflow {
   &:before {
-    content: unicode($icon-pinterest); 
+    content: $icon-stackoverflow; 
   }
 }
 

@@ -5,7 +5,9 @@
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><i class="title-icon icon-suitcase"></i>Experience</h4>
+            <h4 class="text-uppercase text-center">
+                <i class="title-icon icon-suitcase"></i>Experience
+            </h4>
         </div>
 
         <div id="timeline-experience">

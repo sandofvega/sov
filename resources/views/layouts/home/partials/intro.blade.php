@@ -42,9 +42,11 @@
 
                             <!-- PROFILE PICTURE -->
                             <div id="profile" class="right">
-                                <img alt="profile-image" class="img-responsive"
-                                     src="{{ asset('images/me.jpg') }}">
+                                <img alt="profile-image" class="img-responsive" src="{{ asset('images/me.jpg') }}">
                                 <div class="slant"></div>
+                                {{--<div class="btn-floating btn-large add-btn">--}}
+                                    {{--<i class="material-icons">add</i>--}}
+                                {{--</div>--}}
                             </div>
 
                             <div class="card-content">
@@ -75,35 +77,35 @@
 
                                 <!--LINKS-->
                                 <div class="links">
-                                    <!-- FACEBOOK-->
+                                    <!-- FACEBOOK -->
                                     <a href="https://www.facebook.com/sandofvega" target="_blank" id="first_one"
                                        class="social btn-floating indigo">
                                         <i class="icon-facebook"></i>
                                     </a>
-                                    <!-- GITHUB-->
+                                    <!-- GITHUB -->
                                     <a href="https://github.com/sandofvega" target="_blank"
                                        class="social btn-floating black">
                                         <i class="icon-github"></i>
                                     </a>
-                                    <!-- TWITTER-->
-                                    <a href="https://twitter.com/sandofvega" target="_blank"
-                                       class="social btn-floating blue">
-                                        <i class="icon-twitter"></i>
+                                    <!-- StackOverflow -->
+                                    <a href="https://stackoverflow.com/users/9111020/sand-of-vega" target="_blank"
+                                       class="social btn-floating red">
+                                        <i class="icon-stackoverflow"></i>
                                     </a>
-                                    <!-- Google Plus-->
-                                    <a href="https://plus.google.com/+SandOfVega" target="_blank"
-                                       class="social btn-floating blue darken-3">
-                                        <i class="icon-google-plus red"></i>
-                                    </a>
-                                    <!-- LINKEDIN-->
+                                    <!-- LINKEDIN -->
                                     <a href="https://www.linkedin.com/in/sandofvega/" target="_blank"
                                        class="social btn-floating blue darken-3">
                                         <i class="icon-linkedin"></i>
                                     </a>
-                                    <!-- Pintarest-->
-                                    <a href="https://www.pinterest.com/sandofvega/" target="_blank"
-                                       class="social btn-floating red">
-                                        <i class="icon-pinterest"></i>
+                                    <!-- Google Plus -->
+                                    <a href="https://plus.google.com/+SandOfVega" target="_blank"
+                                       class="social btn-floating blue darken-3">
+                                        <i class="icon-google-plus red"></i>
+                                    </a>
+                                    <!-- TWITTER -->
+                                    <a href="https://twitter.com/sandofvega" target="_blank"
+                                       class="social btn-floating blue">
+                                        <i class="icon-twitter"></i>
                                     </a>
                                 </div>
                             </div>

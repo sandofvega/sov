@@ -84,11 +84,6 @@ class BrandsTableSeeder extends Seeder
                 'url' => 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'
             ],
             [
-                'name' => 'bower',
-                'logo' => 'images/brands/bower.png',
-                'url' => 'https://bower.io/'
-            ],
-            [
                 'name' => 'ubuntu',
                 'logo' => 'images/brands/ubuntu.png',
                 'url' => 'https://www.ubuntu.com/'

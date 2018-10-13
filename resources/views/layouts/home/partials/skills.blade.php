@@ -5,7 +5,9 @@
     <div class="container">
         <!-- SECTION TITLE -->
         <div class="section-title">
-            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-sliders"></i>Skills</h4>
+            <h4 class="text-uppercase text-center">
+                <i class="title-icon icon-skill"></i>Skills
+            </h4>
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
