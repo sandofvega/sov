@@ -27,6 +27,16 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
+    ## One week for image files
+    # <filesMatch ".(jpg|jpeg|png|gif|ico)$">
+    # Header set Cache-Control "max-age=604800, public"
+    # </filesMatch>
+
+    ## One week for css and js
+    # <filesMatch ".(css|js)$">
+    # Header set Cache-Control "max-age=604800, public"
+    # </filesMatch>
+
     ## Maintenance Mode (change REMOTE_ADDR to your public IP)
     # RewriteCond %{REQUEST_URI} !maintenance.html
     # RewriteCond %{REMOTE_ADDR} !35.142.63.54
