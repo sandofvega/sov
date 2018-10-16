@@ -27,13 +27,8 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    ## One week for image files
-    # <filesMatch ".(jpg|jpeg|png|gif|ico)$">
-    # Header set Cache-Control "max-age=604800, public"
-    # </filesMatch>
-
-    ## One week for css and js
-    # <filesMatch ".(css|js)$">
+    ## One week cache for assets
+    # <filesMatch ".(css|js|jpg|jpeg|png|gif|ico)$">
     # Header set Cache-Control "max-age=604800, public"
     # </filesMatch>
 
