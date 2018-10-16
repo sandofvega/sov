@@ -14,8 +14,8 @@
 
 
     <!-- GOOGLE FONT -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'> -->
 
     <!-- MATERIALIZE -->
     <link href="{{ asset('css/materialize.css') }}" rel="stylesheet">
