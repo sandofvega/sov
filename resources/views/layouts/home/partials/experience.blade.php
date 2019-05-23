@@ -14,6 +14,30 @@
             <!-- FIRST TIMELINE -->
             <div class="timeline-block">
                 <!-- DOT -->
+                <div class="timeline-dot"><h6>P</h6></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">Software Engineer</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>Prochito ITS</small>
+                            </h6>
+                            <h6>
+                                <small>Dec 2018 - Present</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        {{--<p></p>--}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
                 <div class="timeline-dot"><h6>L</h6></div>
                 <!-- TIMELINE CONTENT -->
                 <div class="card timeline-content">
@@ -26,31 +50,7 @@
                                 <small>Sahara Software & Technology</small>
                             </h6>
                             <h6>
-                                <small>Jan 2018 - Present</small>
-                            </h6>
-                        </div>
-                        <!-- TIMELINE PARAGRAPH -->
-                        {{--<p></p>--}}
-                    </div>
-                </div>
-            </div>
-
-            <!-- SECOND TIMELINE -->
-            <div class="timeline-block">
-                <!-- DOT -->
-                <div class="timeline-dot"><h6>W</h6></div>
-                <!-- TIMELINE CONTENT -->
-                <div class="card timeline-content">
-                    <div class="card-content">
-                        <!-- TIMELINE TITLE -->
-                        <h6 class="timeline-title">Web Researcher</h6>
-                        <!-- TIMELINE TITLE INFO -->
-                        <div class="timeline-info">
-                            <h6>
-                                <small>GIT Desk</small>
-                            </h6>
-                            <h6>
-                                <small>Jan 2016 - June 2016</small>
+                                <small>Jan 2018 - Nov 2018</small>
                             </h6>
                         </div>
                         <!-- TIMELINE PARAGRAPH -->

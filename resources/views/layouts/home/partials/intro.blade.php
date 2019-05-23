@@ -77,15 +77,15 @@
 
                                 <!--LINKS-->
                                 <div class="links">
-                                    <!-- FACEBOOK -->
-                                    <a href="https://www.facebook.com/sandofvega" target="_blank" id="first_one"
-                                       class="social btn-floating indigo">
-                                        <i class="icon-facebook"></i>
-                                    </a>
                                     <!-- GITHUB -->
-                                    <a href="https://github.com/sandofvega" target="_blank"
+                                    <a href="https://github.com/sandofvega" target="_blank" id="first_one"
                                        class="social btn-floating black">
                                         <i class="icon-github"></i>
+                                    </a>
+                                    <!-- FACEBOOK -->
+                                    <a href="https://www.facebook.com/sandofvega" target="_blank"
+                                       class="social btn-floating indigo">
+                                        <i class="icon-facebook"></i>
                                     </a>
                                     <!-- StackOverflow -->
                                     <a href="https://stackoverflow.com/users/9111020/sand-of-vega" target="_blank"
@@ -96,11 +96,6 @@
                                     <a href="https://www.linkedin.com/in/sandofvega/" target="_blank"
                                        class="social btn-floating blue darken-3">
                                         <i class="icon-linkedin"></i>
-                                    </a>
-                                    <!-- Google Plus -->
-                                    <a href="https://plus.google.com/+SandOfVega" target="_blank"
-                                       class="social btn-floating blue darken-3">
-                                        <i class="icon-google-plus red"></i>
                                     </a>
                                     <!-- TWITTER -->
                                     <a href="https://twitter.com/sandofvega" target="_blank"

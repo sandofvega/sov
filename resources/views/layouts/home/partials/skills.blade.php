@@ -15,36 +15,36 @@
                     <div class="card-content">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="skillbar" data-percent="90%">
+                                <div class="skillbar" data-percent="88%">
                                     <div class="skillbar-title"><span>PHP</span></div>
                                     <div class="skillbar-bar"></div>
-                                    <div class="skill-bar-percent">89%</div>
+                                    <div class="skill-bar-percent">88%</div>
                                 </div>
-                                <div class="skillbar" data-percent="90%">
+                                <div class="skillbar" data-percent="92%">
                                     <div class="skillbar-title"><span>Laravel</span></div>
                                     <div class="skillbar-bar"></div>
-                                    <div class="skill-bar-percent">87%</div>
+                                    <div class="skill-bar-percent">92%</div>
                                 </div>
-                                <div class="skillbar" data-percent="70%">
-                                    <div class="skillbar-title"><span>Wordpress</span></div>
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span>SQL</span></div>
                                     <div class="skillbar-bar"></div>
-                                    <div class="skill-bar-percent">81%</div>
+                                    <div class="skill-bar-percent">85%</div>
                                 </div>
                             </div>
 
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="skillbar" data-percent="80%">
-                                    <div class="skillbar-title"><span>MySQL</span></div>
+                                <div class="skillbar" data-percent="86%">
+                                    <div class="skillbar-title"><span>JavaScript</span></div>
                                     <div class="skillbar-bar"></div>
                                     <div class="skill-bar-percent">86%</div>
                                 </div>
-                                <div class="skillbar" data-percent="60%">
-                                    <div class="skillbar-title"><span>JavaScript</span></div>
+                                <div class="skillbar" data-percent="89%">
+                                    <div class="skillbar-title"><span>Vue</span></div>
                                     <div class="skillbar-bar"></div>
-                                    <div class="skill-bar-percent">78%</div>
+                                    <div class="skill-bar-percent">89%</div>
                                 </div>
-                                <div class="skillbar" data-percent="70%">
+                                <div class="skillbar" data-percent="84%">
                                     <div class="skillbar-title"><span>HTML & CSS</span></div>
                                     <div class="skillbar-bar"></div>
                                     <div class="skill-bar-percent">84%</div>
